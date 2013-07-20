@@ -111,7 +111,7 @@ mvn package
 ./tools/submit org.hackreduce.storm.example.ExclamationTopology cluster 
 </code></pre>
 
-<p>If all of these commands were successful, you should now see your topology running in the <a href="http://cluster-7-master.sl.hackreduce.net:8080">Storm UI</a>. It should appear as <code>&lt;my-team-name&gt;-Exclaim</code>.</p>
+<p>If all of these commands were successful, you should now see your topology running in the <a href="http://cluster-7-master.sl.hackreduce.net:5698">Storm UI</a>. It should appear as <code>&lt;my-team-name&gt;-Exclaim</code>.</p>
 
 <p>You may now kill this example topology:</p>
 
@@ -141,7 +141,7 @@ mvn package
 </div></p></li>
 <li><p> Add the following line to your Vagrantfile
 <div>
-<pre><code class='ruby'>config.vm.network :hostonly, ip: &quot;192.168.101.11&quot;</code></pre>
+<pre><code class='ruby'>config.vm.network :private_network, ip: &quot;192.168.101.11&quot;</code></pre>
 </div></p></li>
 <li><p> Start VM
 <div>
